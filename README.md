@@ -19,14 +19,15 @@
 
 这个匹配模式是匹配所有url网页.  
 也许你并不像这么做,比如你只想匹配本地打开的pdf,则可以改成:  
-``` // @match file:///*/*.pdf 
+``` javascript
+ // @match file:///*/*.pdf 
 ```
 
 你还可以额外指定包含和排除模式,比如:
 ``` javascript
-//@include  https://wiki.greasespot.net/*  
-//@include  http://mozilla.github.io/pdf.js/web/viewer.html    
-//@include /^(http|https)://en\.people\.cn//   
+// @include  https://wiki.greasespot.net/*  
+// @include  http://mozilla.github.io/pdf.js/web/viewer.html    
+// @include /^(http|https)://en\.people\.cn//   
 ```
 
 更多支持正则的匹配模式可以参考这个文档:[pattern][4]
