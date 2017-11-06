@@ -168,7 +168,7 @@
 
     var pdf_background_color =(typeof y_pdf_bc=='undefined'||y_pdf_bc=='')?'#C7EDCC':y_pdf_bc ;
     console.log('修改PDF的页面背景色为:'+pdf_background_color);
-    if(window.location.href.toLowerCase().match(/\.pdf$/)){
+    if(window.location.href.toLowerCase().match(/\.pdf$/)||$('#secondaryToolbarButtonContainer')){
         console.log('  当前正在浏览pdf,将会修复一些样式问题...');
         $("body").append('<style id="custom-style-huangkefen" type="text/css">::-moz-selection {color:inherit;}\n::selection {color:inherit;}\n.textLayer {background-color:'+pdf_background_color+'}</style>');
     }else{
