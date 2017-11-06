@@ -21,7 +21,7 @@
 
 你还可以额外指定包含和排除模式,比如:
 >
->>//@include  https://wiki.greasespot.net/*  
+>>//\@include  https://wiki.greasespot.net/*  
 >>//@include  http://mozilla.github.io/pdf.js/web/viewer.html    
 >>//@include /^(http|https)://en\.people\.cn//   
 
