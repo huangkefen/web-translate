@@ -21,9 +21,9 @@
 
 你还可以额外指定包含和排除模式,比如:
 >
->// @include  https://wiki.greasespot.net/*  
-// @include  http://mozilla.github.io/pdf.js/web/viewer.html    
-// @include /^(http|https)://en\.people\.cn//   
+>>//@include  https://wiki.greasespot.net/*  
+>>//@include  http://mozilla.github.io/pdf.js/web/viewer.html    
+>>//@include /^(http|https)://en\.people\.cn//   
 
 
 更多支持正则的匹配模式可以参考这个文档:[pattern][4]
