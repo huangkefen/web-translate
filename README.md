@@ -13,18 +13,18 @@
 
 ##3 url匹配模式简单说明(**重要**)  
 在js代码的开头有一行注释是:
-> // @match *://*/*
->
+``` // @match *://*/* ```
+
 这个匹配模式是匹配所有url网页.  
 也许你并不像这么做,比如你只想匹配本地打开的pdf,则可以改成:  
-> // @match file:///*/*.pdf
+``` // @match file:///*/*.pdf ```
 
 你还可以额外指定包含和排除模式,比如:
->
->>//\@include  https://wiki.greasespot.net/*  
->>//@include  http://mozilla.github.io/pdf.js/web/viewer.html    
->>//@include /^(http|https)://en\.people\.cn//   
-
+``` 
+//@include  https://wiki.greasespot.net/*  
+//@include  http://mozilla.github.io/pdf.js/web/viewer.html    
+//@include /^(http|https)://en\.people\.cn//   
+```
 
 更多支持正则的匹配模式可以参考这个文档:[pattern][4]
 
