@@ -1,7 +1,8 @@
 // ==UserScript==
 // @name icaba-翻译
 // @namespace Violentmonkey Scripts
-// @match    file:///*/*
+// @homepageURL https://bitbucket.org/huangkefen/web-translate
+// @match    file:///*/*.pdf
 // @include  https://wiki.greasespot.net/*
 // @include  http://mozilla.github.io/pdf.js/web/viewer.html
 // @include  /^chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/file:///*/*//
