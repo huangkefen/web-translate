@@ -4,10 +4,10 @@
 也可以浏览普通的英文页面.
 
 ## 2 使用说明
-1. 安装浏览器脚本插件，[violentmonkey][2]
-2. 推荐火狐浏览器[Link][3],因为火狐默认使用[PDF.js](http://mozilla.github.io/pdf.js/)浏览PDF。而chrome需要手动安装,并且由于chrome有较多的安全特性,难以匹配到本地pdf地址。
-3. violentmonkey插件安装之后，新建一个脚本，然后把js文件里的代码全部复制粘贴，保存即可。
-4. 可以根据需要做一些改动。比如页面背景色等等都可以在代码中找到。
+1. 安装浏览器脚本插件，[violentmonkey][2](暴力猴) 或者 [greasemonkey][](油猴子) 或者 [tampermonkey][](捣蛋猴)
+2. 推荐使用火狐浏览器并安装[Link][3],因为火狐默认使用[PDF.js](http://mozilla.github.io/pdf.js/)浏览PDF。而chrome需要手动安装,并且由于chrome有较多的安全特性,难以匹配到本地pdf地址。
+3. 插件安装之后，新建一个脚本，然后把js文件里的代码全部复制粘贴，保存即可。
+4. 可以根据需要做一些改动。比如页面背景色等等都可以很容易在代码中找到。
 5. javascript熟悉者也可以自定义添加更丰富的功能。
 
 
@@ -68,3 +68,6 @@ v1.2.1
 [3]:<https://addons.mozilla.org/zh-CN/firefox/addon/violentmonkey/>
 [4]:<https://wiki.greasespot.net/Include_and_exclude_rules>
 [5]:<http://get.adobe.com/cn/flashplayer>
+
+[greasemonkey]:<https://addons.mozilla.org/zh-CN/firefox/addon/greasemonkey/>
+[tampermonkey]:<https://addons.mozilla.org/zh-CN/firefox/addon/tampermonkey/>
