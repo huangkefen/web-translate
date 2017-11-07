@@ -8,7 +8,6 @@
 // @match    *://www.chinadaily.com.cn/*
 // @include  https://wiki.greasespot.net/*
 // @include  http://mozilla.github.io/pdf.js/web/viewer.html
-// @match  /^chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/file:///*/*//
 // @include /^(http|https)://en\.people\.cn//
 // @run-at document-end
 // @grant none
