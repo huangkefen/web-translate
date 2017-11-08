@@ -2,9 +2,9 @@
 + 双击划词翻译,浏览器脚本插件，支持PDF和普通网页. 
 + 使用国内优秀翻译软件[iCIBA][1]的即划即译功能。  
 + 我做了点微小的工作，把iCIBA的即划即译功能移植到浏览器上.   
------------------------------
-**↓↓↓**  在firefox下浏览本地pdf 以及 在chrome下浏览普通网页  **↓↓↓**   
 
+
+**↓↓↓**  在firefox下浏览本地pdf 以及 在chrome下浏览普通网页  **↓↓↓**   
 
 ![view1](https://thumbnail0.baidupcs.com/thumbnail/b3b6e3df3608c5d87bf658488da26635?fid=2013309064-250528-348452523678046&time=1510153200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-Z%2Fy02DdkgWBbAkQAl%2BHB%2BHmGJW8%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=7235231478578735940&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)      
 -----------------------------
