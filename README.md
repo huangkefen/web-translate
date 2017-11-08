@@ -80,7 +80,7 @@ v1.2.1
 [3]:<https://addons.mozilla.org/zh-CN/firefox/addon/violentmonkey/>
 [4]:<https://wiki.greasespot.net/Include_and_exclude_rules>
 [5]:<http://get.adobe.com/cn/flashplayer>
-clea
+
 [greasemonkey]:<https://addons.mozilla.org/zh-CN/firefox/addon/greasemonkey/>
 [tampermonkey]:<https://addons.mozilla.org/zh-CN/firefox/addon/tampermonkey/>
 [match_patterns]:<http://code.google.com/chrome/extensions/match_patterns.html>
