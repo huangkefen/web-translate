@@ -1,11 +1,15 @@
 ## 1 关于
-这是一个PDF的浏览器翻译插件，使用国内优秀的翻译软件[iCIBA][1]的即划即译功能。
-我做了点小改动，以便在使用浏览器阅读英文PDF文档时更加方便快捷。
-也可以浏览普通的英文页面.
-先来两张效果图  
-firefox下浏览本地pdf:  
+这是一个双击划词翻译的浏览器脚本插件， 支持PDF和普通网页.  
+使用的是国内优秀的翻译软件[iCIBA][1]的即划即译功能。  
+我做了点微小的工作，把iCIBA的即划即译功能移植到浏览器上.  
+两张效果图如下  
+1.  **↓**  firefox下浏览本地pdf :
+
+
 ![view1](https://thumbnail0.baidupcs.com/thumbnail/b3b6e3df3608c5d87bf658488da26635?fid=2013309064-250528-348452523678046&time=1510153200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-Z%2Fy02DdkgWBbAkQAl%2BHB%2BHmGJW8%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=7235231478578735940&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)    
-chrome下浏览普通网页:  
+
+
+2.  **↓**  chrome下浏览普通网页 :    
 ![view2](https://thumbnail0.baidupcs.com/thumbnail/00b0173b6d08c2c0673dd7c9e1d3aa71?fid=2013309064-250528-761986531591439&time=1510153200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-Bkr%2BFK8JHPMdgpNcMgZSSh%2BWdNs%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=7235249267459748532&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)  
 
 ## 2 使用说明
