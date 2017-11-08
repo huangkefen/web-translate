@@ -12,21 +12,21 @@
 
 ## 2 使用说明
 1. 安装浏览器插件，[violentmonkey][2](暴力猴) 或者 [greasemonkey][](油猴子) 或者 [tampermonkey][](捣蛋猴)
-2. 推荐使用火狐浏览器,因为火狐默认使用[PDF.js](http://mozilla.github.io/pdf.js/)浏览PDF。
-3. 我用的脚本插件是[violentmonkey][3],主要是因为这个支持firefox的长期支持版,兼容旧版本,而且图标不错,界面简洁.
-4. 插件安装之后，新建一个脚本，然后把js文件里的代码全部复制粘贴，保存即可。
-6. 修改url匹配模式
+2. 推荐[火狐][6],因为火狐默认使用[PDF.js](http://mozilla.github.io/pdf.js/)加载本地PDF。
+3. 推荐插件[violentmonkey][3],兼容较好,图标好看,界面简洁.
+4. 插件安装后，新建脚本，然后把js文件里的代码全部粘贴进去，保存。
+6. 按需修改url匹配模式.
 
 ## 3 功能特性
-1.  双击或划译取词.
-2.  支持**本地PDF**的双击划译(目前仅firefox)。
-3.  支持**普通网页**的双击划译(firefox和chrome)。
-4.  支持PDF页面背景色更改，默认苹果绿，可自定义。
-5.  支持**发音**(需安装flash)。
-6.  翻译弹窗可固定。
-7.  **取词开关**默认隐藏在右上角菜单(PDF模式下)。
-8.  跨平台，浏览器+插件。(针对日常使用Linux的朋友)
-9.  强大的url正则匹配功能。
+1.   双击或划译取词.
+2.   支持**本地PDF**的双击划译(目前仅firefox)。
+3.   支持**普通网页**的双击划译(firefox和chrome)。
+4.   支持PDF页面背景色更改，默认苹果绿，可自定义。
+5.   支持**发音**(需安装flash)。
+6.   翻译弹窗可固定。
+7.   **取词开关**默认隐藏在右上角菜单(PDF模式下)。
+8.   跨平台，浏览器+插件。(针对日常使用Linux的朋友)
+9.   强大的url正则匹配功能。
 10.  持续更新,有时间将会加入其他翻译源的支持.
 
 ## 3 url匹配模式简单说明(**重要**)
@@ -97,7 +97,7 @@ v1.2.1
 [3]:<https://addons.mozilla.org/zh-CN/firefox/addon/violentmonkey/>
 [4]:<https://wiki.greasespot.net/Include_and_exclude_rules>
 [5]:<http://get.adobe.com/cn/flashplayer>
-
+[6]:<https://www.mozilla.org/zh-CN/firefox/new/>
 [greasemonkey]:<https://addons.mozilla.org/zh-CN/firefox/addon/greasemonkey/>
 [tampermonkey]:<https://addons.mozilla.org/zh-CN/firefox/addon/tampermonkey/>
 [match_patterns]:<http://code.google.com/chrome/extensions/match_patterns.html>
