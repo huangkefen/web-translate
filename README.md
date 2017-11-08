@@ -11,7 +11,7 @@
 ![view2](https://thumbnail0.baidupcs.com/thumbnail/00b0173b6d08c2c0673dd7c9e1d3aa71?fid=2013309064-250528-761986531591439&time=1510153200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-Bkr%2BFK8JHPMdgpNcMgZSSh%2BWdNs%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=7235249267459748532&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)  
 
 ## 2 使用说明
-1. 需要安装浏览器脚本插件，  [violentmonkey][2](暴力猴)   或者 [greasemonkey][](油猴子)   或者 [tampermonkey][](捣蛋猴)
+1. 安装浏览器插件，[violentmonkey][2](暴力猴) 或者 [greasemonkey][](油猴子) 或者 [tampermonkey][](捣蛋猴)
 2. 推荐使用火狐浏览器,因为火狐默认使用[PDF.js](http://mozilla.github.io/pdf.js/)浏览PDF。
 3. 我用的脚本插件是[violentmonkey][3],主要是因为这个支持firefox的长期支持版,兼容旧版本,而且图标不错,界面简洁.
 4. 插件安装之后，新建一个脚本，然后把js文件里的代码全部复制粘贴，保存即可。
