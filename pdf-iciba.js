@@ -176,7 +176,7 @@
     ICIBA_HUAYI_Str += '    </div>';
     ICIBA_HUAYI_Str += '    <div class="icIBahyI-search">';
     ICIBA_HUAYI_Str += '        <div class="icIBahyI-search-w clearfix">';
-    ICIBA_HUAYI_Str += '            <input id="ICIBA_HUAYI_input" name="" type="text" onkeydown="ICIBA_HUAYI_KEYDOWN(event);">';
+    ICIBA_HUAYI_Str += '            <input id="ICIBA_HUAYI_input" name="" type="text" onkeydown="ICIBA_HUAYI_KEYDOWN(event);"/>';
     ICIBA_HUAYI_Str += '            <a href="javascript:;" class="icIBahyI-sear" onclick="ICIBA_HUAYI_searchword()" >搜索</a>';
     ICIBA_HUAYI_Str += '            <a href="javascript:;" id="hy_clear" class="hy_clear"></a>';
     ICIBA_HUAYI_Str += '        </div>';
