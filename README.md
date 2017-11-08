@@ -70,8 +70,8 @@ v1.2.1
 ## 7 可能存在的问题
 + 发音功能需要安装好flash以及解码器,而部分系统(Linux)或浏览器并未预装
 
-![view1](http://public-picture.oss-cn-shenzhen.aliyuncs.com/web-translate/pdf-translate-view1.jpg)  
-![view2](http://public-picture.oss-cn-shenzhen.aliyuncs.com/web-translate/pdf-translate-view2.jpg)
+![view1](https://thumbnail0.baidupcs.com/thumbnail/b3b6e3df3608c5d87bf658488da26635?fid=2013309064-250528-348452523678046&time=1510153200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-Z%2Fy02DdkgWBbAkQAl%2BHB%2BHmGJW8%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=7235231478578735940&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)  
+![view2](https://thumbnail0.baidupcs.com/thumbnail/00b0173b6d08c2c0673dd7c9e1d3aa71?fid=2013309064-250528-761986531591439&time=1510153200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-Bkr%2BFK8JHPMdgpNcMgZSSh%2BWdNs%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=7235249267459748532&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
 
 
 
