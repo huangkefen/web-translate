@@ -67,8 +67,8 @@ v1.2.1
 ## 6 Chrome兼容问题
 + chrome下的url模式无法匹配chrome-extension开头的地址.(如果有解决方案,请告诉我,感谢!)
 + chrome下的发音问题.经我初步排查,疑是官方脚本中的mp3发音代码对chrome的兼容问题.我目前还没什么有效的解决方案.
-## 7 可能存在的问题
-+ 发音功能需要安装好flash以及解码器,而部分系统(Linux)或浏览器并未预装
+## 7 存在的问题
++ github.io上的某些页面,如[sarabander][]会出现无法成功查询到数据.
 
 ![view1](https://thumbnail0.baidupcs.com/thumbnail/b3b6e3df3608c5d87bf658488da26635?fid=2013309064-250528-348452523678046&time=1510153200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-Z%2Fy02DdkgWBbAkQAl%2BHB%2BHmGJW8%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=7235231478578735940&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)  
 ![view2](https://thumbnail0.baidupcs.com/thumbnail/00b0173b6d08c2c0673dd7c9e1d3aa71?fid=2013309064-250528-761986531591439&time=1510153200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-Bkr%2BFK8JHPMdgpNcMgZSSh%2BWdNs%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=7235249267459748532&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)
@@ -80,9 +80,9 @@ v1.2.1
 [3]:<https://addons.mozilla.org/zh-CN/firefox/addon/violentmonkey/>
 [4]:<https://wiki.greasespot.net/Include_and_exclude_rules>
 [5]:<http://get.adobe.com/cn/flashplayer>
-
+clea
 [greasemonkey]:<https://addons.mozilla.org/zh-CN/firefox/addon/greasemonkey/>
 [tampermonkey]:<https://addons.mozilla.org/zh-CN/firefox/addon/tampermonkey/>
 [match_patterns]:<http://code.google.com/chrome/extensions/match_patterns.html>
 [tampermonkey-documentation]:<http://code.google.com/chrome/extensions/match_patterns.html>
-
+[sarabander]:<https://sarabander.github.io/sicp/html/index.xhtml>
