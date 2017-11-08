@@ -218,7 +218,7 @@
         console.log('\t> 设置pdf页面背景色为:'+pdf_background_color);
         $("body").append('<style id="custom-style-huangkefen" type="text/css">::-moz-selection {color:inherit;}\n::selection {color:inherit;}\n.textLayer {background-color:'+pdf_background_color+'}</style>');
     }else{
-        console.log('\t> (web): nothing')
+        console.log('\t> (web): nothing');
         $("body").append('<style id="custom-style-huangkefen" type="text/css"></style>');
     }
 
