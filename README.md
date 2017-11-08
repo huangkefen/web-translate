@@ -9,13 +9,21 @@ chrome下浏览普通网页:
 ![view2](https://thumbnail0.baidupcs.com/thumbnail/00b0173b6d08c2c0673dd7c9e1d3aa71?fid=2013309064-250528-761986531591439&time=1510153200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-Bkr%2BFK8JHPMdgpNcMgZSSh%2BWdNs%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=7235249267459748532&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)  
 
 ## 2 使用说明
-1. 安装浏览器脚本插件，[violentmonkey][2](暴力猴) 或者 [greasemonkey][](油猴子) 或者 [tampermonkey][](捣蛋猴)
-2. 推荐使用火狐浏览器,因为火狐默认使用[PDF.js](http://mozilla.github.io/pdf.js/)浏览PDF。而chrome需要手动安装,并且由于chrome有较多的安全特性,难以匹配到本地pdf地址。
+1. 需要安装浏览器脚本插件，  [violentmonkey][2](暴力猴)   或者 [greasemonkey][](油猴子)   或者 [tampermonkey][](捣蛋猴)
+2. 推荐使用火狐浏览器,因为火狐默认使用[PDF.js](http://mozilla.github.io/pdf.js/)浏览PDF。
 3. 我用的脚本插件是[violentmonkey][3],主要是因为这个支持firefox的长期支持版,兼容旧版本,而且图标不错,界面简洁.
 4. 插件安装之后，新建一个脚本，然后把js文件里的代码全部复制粘贴，保存即可。
-5. 可以根据需要做一些改动。比如页面背景色等等都可以很容易在代码中找到。
-6. javascript熟悉者也可以自定义添加更丰富的功能。
+6. 修改url匹配模式
 
+## 3 功能特性
+1.  双击或划译取词.
+2.  支持本地PDF(初衷)和普通网页
+3.  支持PDF页面背景色更改，默认苹果绿，可自定义。
+4.  支持发音(需安装flash)。
+5.  翻译弹窗可固定
+6.  取词开关默认隐藏在右上角菜单(PDF模式下)。
+7.  跨平台，浏览器+插件。(针对日常使用Linux的朋友)
+7.  强大的url正则匹配功能。
 
 ## 3 url匹配模式简单说明(**重要**)
 在js代码的开头有一行注释是:
