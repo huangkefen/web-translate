@@ -70,8 +70,8 @@ v1.2.1
 ## 7 可能存在的问题
 + 发音功能需要安装好flash以及解码器,而部分系统(Linux)或浏览器并未预装
 
-![view1](img/pdf-translate-view1.png)
-![view2](img/pdf-translate-view2.png)
+![view1](img/pdf-translate-view1.jpg)
+![view2](img/pdf-translate-view2.jpg)
 
 
 
