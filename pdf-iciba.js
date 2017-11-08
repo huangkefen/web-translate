@@ -133,6 +133,7 @@
     }else if(currentView=='web'){
         //浏览模式为web时,嵌入取词开关
         console.log('\t> (web):暂未开发');
+        $("body").append(div_switch);
     }
 
 
