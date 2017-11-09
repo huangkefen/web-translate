@@ -26,7 +26,7 @@
 {
     /*必备:加载jQuery*/
     console.log('Step-0:加载jQuery依赖:');
-    if(typeof jQuery == 'undefined'||jQuery.prototype.jquery.replace(/\D/g,'')<142){
+    if(typeof jQuery == 'undefined'||(jQuery.prototype.jquery&&jQuery.prototype.jquery.replace(/\D/g,'')<142)){
 
         console.log('\t> jQuery 不存在 或 版本低于 1.4.2 ');
         console.log('\t> Loading jQuery v2.1.4 ');
