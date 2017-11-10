@@ -58,7 +58,7 @@
         }
 
         console.log('\t  >> Success Load jQuery v2.1.4 ');
-    }else {
+    }else if(jQuery.prototype.jquery) {
         console.log('\t> Use existed jQuery:',jQuery.prototype.jquery);
     }
 }
@@ -93,7 +93,7 @@
         说明:这里添加了针对chrome的逻辑判断代码,判断逻辑为检测指定的pdf.js的元素是否存在,所以要求在页面加载完成之后执行,才能生效
     */
     var currentView = 'web';  //可选值 web  pdf  默认为web
-    if(window.location.href.toLowerCase().match(/\.pdf$/)||(isChrome&&$('#secondaryToolbarButtonContainer').length>0)){
+    if(window.location.href.toLowerCase().match(/\.pdf$/)||$('#secondaryToolbarButtonContainer').length>0){
         currentView='pdf';
         console.log('\t> pdf浏览模式',isChrome?'[chrome]':'');
     }else {
