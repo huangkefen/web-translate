@@ -6,9 +6,9 @@
 
 **↓↓↓**  在firefox下浏览本地pdf 以及 在chrome下浏览普通网页  **↓↓↓**   
 
-![view1](https://thumbnail0.baidupcs.com/thumbnail/b3b6e3df3608c5d87bf658488da26635?fid=2013309064-250528-348452523678046&time=1510153200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-Z%2Fy02DdkgWBbAkQAl%2BHB%2BHmGJW8%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=7235231478578735940&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)      
+![view1](http://oz6vony8d.bkt.clouddn.com/pdf-translate-view1.jpg)      
 -----------------------------
-![view2](https://thumbnail0.baidupcs.com/thumbnail/00b0173b6d08c2c0673dd7c9e1d3aa71?fid=2013309064-250528-761986531591439&time=1510153200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-Bkr%2BFK8JHPMdgpNcMgZSSh%2BWdNs%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=7235249267459748532&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)  
+![view2](http://oz6vony8d.bkt.clouddn.com/pdf-translate-view2.jpg)  
 
 ## 2 使用说明
 1. 安装浏览器插件，[violentmonkey][2](暴力猴) 或者 [greasemonkey][](油猴子) 或者 [tampermonkey][](捣蛋猴)
@@ -28,9 +28,9 @@
 7.   **取词开关**默认隐藏在右上角菜单(PDF模式下)。
 8.   跨平台，浏览器+插件。(针对日常使用Linux的朋友)
 9.   强大的url正则匹配功能。
-10.  持续更新,有时间将会加入其他翻译源的支持(比如有道和百度).
 
-## 3 url匹配模式简单说明(**重要**)
+
+## 4 url匹配模式简单说明(**重要**)
 在js代码的开头有一行注释是:
 ``` javascript
 // @match *://*/* 
@@ -52,7 +52,7 @@
 + 模式匹配可参考:[pattern][4] 或者 [match_patterns][]
 + 更详细的文档也可以参考 [tampermonkey-documentation][]
 
-## 4 版本
+## 5 版本
 v1.0  初始版本  
 1. 添加了jQuery支持  
 2. 即划即译的开关按钮隐藏在pdf页面右上角的菜单中  
@@ -71,7 +71,7 @@ v1.2
 v1.2.1  
 修复了chrome下浏览在线pdf时候的字体重影问题.
 
-## 5 Why
+## 6 Why
 初衷:
 - Linux下阅读PDF英文文档不方便，  
 - goldendict非常不错,但却不支持foxitpdf的双击取词翻译。  
@@ -84,13 +84,13 @@ v1.2.1
 答:主要是为了避免脚本冲突以及重复加载,避免对原网站造成干扰。
 
 
-## 6 Chrome兼容问题
+## 7 Chrome兼容问题
 + chrome下无法匹配chrome-extension开头的地址.(如果有解决方案,请告诉我,感谢!)
 + chrome下无法发音.经我初步排查,疑是官方脚本中的mp3发音代码对chrome的兼容问题.我目前还没什么有效的解决方案.
 
-## 7 尚未支持的少数网页
+## 8 尚未支持的少数网页(被浏览器安全机制所阻止)
 + github.io上的某些页面,如[sarabander][]无法成功查询到数据.可能是默认脚本安全机制的问题.
-+ https://github.com/  未经github签名的脚本会被拒绝注入,所以在github.com上脚本会失败.
++ [github.com][]  未经github签名的脚本会被拒绝注入,所以在github.com上脚本会失败.
 + 爱词霸官方API接口目前存在一些问题.并且因为我对前端不是很熟悉(主后端开发和算法),若有好的修正方案,可留言告知,感激不尽.
 
 
@@ -105,3 +105,4 @@ v1.2.1
 [match_patterns]:<http://code.google.com/chrome/extensions/match_patterns.html>
 [tampermonkey-documentation]:<http://code.google.com/chrome/extensions/match_patterns.html>
 [sarabander]:<https://sarabander.github.io/sicp/html/index.xhtml>
+[github.com]:<https://github.com>
