@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name iciba-translate
 // @namespace Violentmonkey Scripts
-// @homepageURL https://bitbucket.org/huangkefen/web-translate
+// @homepageURL https://huangkefen.github.io/web-translate/
 // @match    file:///*/*.pdf
 // @match    *://*/*.pdf
 // @match    *://english.sina.com/*
