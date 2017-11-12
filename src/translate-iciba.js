@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name iciba-translate
+// @name web-translate-iciba
 // @namespace Violentmonkey Scripts
 // @homepageURL https://huangkefen.github.io/web-translate/
 // @match    file:///*/*.pdf
@@ -17,7 +17,7 @@
 
 // email:huangkefen@163.com
 // dev-date: 2017/11/06
-// lastupdate: 2017/11/07
+// lastupdate: 2017/11/12
 
 {
     var isChrome = navigator.userAgent.toLowerCase().match(/chrome/) != null ;
@@ -60,6 +60,8 @@
         console.log('\t  >> Success Load jQuery v2.1.4 ');
     }else if(jQuery.prototype.jquery) {
         console.log('\t> Use existed jQuery:',jQuery.prototype.jquery);
+    }else {
+        console.log('未知的jQuery:');console.log(jQuery);
     }
 }
 
@@ -68,16 +70,28 @@
     console.assert(jQuery,"必须的依赖jQuery未能正确加载!");
 }
 
-
+/*模块1:爱词霸的取词插件*/
 
 {
 
-    /*模块1:爱词霸的取词插件*/
-
     /*配置:用户可自定义*/
-    var y_pdf_bc = '#C7EDCC'; // pdf的页面背景色 默认 #C7EDCC
-    var y_sp='inner';// 取词开关在pdf文件中的位置 默认inner 可取 left  middle right inner
-    var y_sbc='#C7EDCC';// 取词开关的背景色 默认 #C7EDCC
+
+
+    //pdf模式的配置
+    var cfg_pdf={
+        background_color:'#C7EDCC', //页面背景色 默认 #C7EDCC
+        style:'::-moz-selection {color:inherit;}\n::selection {color:inherit;}\n'  //pdf模式下修正一些样式问题,可自行修改
+    };
+    //web模式的配置
+    var cfg_web={
+        style:''
+    };
+    //取词开关的配置
+    var cfg_switch={
+        position:'inner', // 默认inner 可取 left  middle right inner
+        background_color:'#C7EDCC'
+    };
+
 
 /*
 *
@@ -114,18 +128,18 @@
     console.log('Step-2:添加取词开关');
     var div_switch=document.createElement("div");
     div_switch.setAttribute("id","Jihuajiyi");
-    div_switch.setAttribute("style","background-color:"+(typeof y_sbc=='undefined'||y_sbc=='')?'#C7EDCC':y_sbc); //开关的背景色也设为苹果绿
+    div_switch.setAttribute("style","background-color:"+cfg_switch.background_color); //开关的背景色也设为苹果绿
 
-    var switch_position =(typeof y_sp=='undefined'||y_sp=='')?'inner':y_sp ;
+    // var switch_position =(typeof y_sp=='undefined'||y_sp=='')?'inner':y_sp ;
 
     if(currentView=='pdf'){
         //浏览模式为pdf时,嵌入取词开关
-        console.log('\t> (pdf):'+switch_position+","+y_sbc);
-        if(switch_position=='left'){
+        console.log('\t> (pdf):'+cfg_switch.position+","+cfg_switch.background_color);
+        if(cfg_switch.position=='left'){
             $("#toolbarViewerLeft").prepend(div_switch);
-        }else if(switch_position=='middle'){
+        }else if(cfg_switch.position=='middle'){
             $("#toolbarViewerMiddle").prepend(div_switch);
-        }else if(switch_position=='right'){
+        }else if(cfg_switch.position=='right'){
             $("#toolbarViewerRight").prepend(div_switch);
         }else{
             $("#secondaryToolbar").append(div_switch);
@@ -212,21 +226,15 @@
     *
     * */
     console.log('Step-4:应用样式');
-    var pdf_background_color =(typeof y_pdf_bc=='undefined'||y_pdf_bc=='')?'#C7EDCC':y_pdf_bc ;
 
     if(currentView=='pdf'){
-        console.log('\t> 设置pdf页面背景色为:'+pdf_background_color);
-        $("body").append('<style id="custom-style-huangkefen" type="text/css">::-moz-selection {color:inherit;}\n::selection {color:inherit;}\n.textLayer {background-color:'+pdf_background_color+'}</style>');
+        console.log('\t> 设置pdf页面背景色为:'+cfg_pdf.background_color);
+        $("body").append('<style id="custom-style-huangkefen" type="text/css">'+cfg_pdf.style+'.textLayer {background-color:'+cfg_pdf.background_color+'}</style>');
     }else{
         console.log('\t> (web): nothing');
-        $("body").append('<style id="custom-style-huangkefen" type="text/css"></style>');
+        $("body").append('<style id="custom-style-huangkefen" type="text/css">'+cfg_web.style+'</style>');
     }
-
 
     console.log("Success!爱词霸取词插件加载完毕!");
 }
 
-{
-    // console.log($("embed").attr("id"));
-    // $("embed").dblclick( function () { alert("Hello World222!"); });
-}
