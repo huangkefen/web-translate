@@ -202,6 +202,7 @@
     //ICIBA_HUAYI_Str += '    	<iframe id="ifm1" frameborder="0" width="280px" scrolling="no" ></iframe>';
     //ICIBA_HUAYI_Str += '    </div>';
     ICIBA_HUAYI_Str += '<div class="icIBahyI-down"><a href="https://hoplink.ksosoft.com/oi5p" onclick="clickCountIndex(26)"  target="_blank">搞定邮箱／文档／PDF取词？下载PC版</a></div>';
+    ICIBA_HUAYI_Str += '<div class="icIBahyI-options" style="display: none"><div class="icIBahyI-scbbtn" id="icIBahyI-scbbtn" style="display: none" onclick=";"></div><div class="icIBahyI-morebtn" id="icIBahyI-morebtn" style="display: none"><a id="more_info" href="" target="_blank"></a></div></div>';
     ICIBA_HUAYI_Str += '</div>';
     ICIBA_HUAYI_Str += '<script src="https://open.iciba.com/huaci/dict.php" charset="utf-8"></script>';
     ICIBA_HUAYI_Str += '<object style="height:0px;width:0px;overflow:hidden;" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="https://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="0" height="0" id="asound_hanci" align="absmiddle">';
