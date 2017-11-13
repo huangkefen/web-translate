@@ -103,6 +103,6 @@ v1.2.1
 [greasemonkey]:<https://addons.mozilla.org/zh-CN/firefox/addon/greasemonkey/>
 [tampermonkey]:<https://addons.mozilla.org/zh-CN/firefox/addon/tampermonkey/>
 [match_patterns]:<http://code.google.com/chrome/extensions/match_patterns.html>
-[tampermonkey-documentation]:<http://code.google.com/chrome/extensions/match_patterns.html>
+[tampermonkey-documentation]:<http://tampermonkey.net/documentation.php>
 [sarabander]:<https://sarabander.github.io/sicp/html/index.xhtml>
 [github.com]:<https://github.com>
