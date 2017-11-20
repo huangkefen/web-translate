@@ -1,7 +1,8 @@
 ## 1 关于
 + 双击划词翻译,浏览器脚本插件，支持PDF和普通网页. 
 + 使用国内优秀翻译软件[iCIBA][1]的即划即译功能。  
-+ 我做了点微小的工作，把iCIBA的即划即译功能移植到浏览器上. 
++ 我做了点微小的工作，把iCIBA的即划即译功能移植到浏览器上.
++ **超级重大更新(2017/11/20):已经使用标准WebExtensionsAPI开发成扩展,版本1.0: [Web-Translate][]**
 + **重大更新(2017/11/14):重写发音代码,现可完美发音,无需flash支持**.  
 
 
@@ -107,3 +108,4 @@ v1.2.1
 [tampermonkey-documentation]:<http://tampermonkey.net/documentation.php>
 [sarabander]:<https://sarabander.github.io/sicp/html/index.xhtml>
 [github.com]:<https://github.com>
+[Web-Translate]:<https://addons.mozilla.org/zh-CN/firefox/addon/web-translate>
