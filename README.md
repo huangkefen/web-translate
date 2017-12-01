@@ -1,7 +1,7 @@
 ## 1 关于
 + 双击划词翻译,浏览器脚本插件，支持PDF和普通网页. 
 + 使用国内优秀翻译软件[iCIBA][1]的即划即译功能。  
-+ 我做了点微小的工作，把iCIBA的即划即译功能移植到浏览器上.
+
 + **firefox扩展: [Web-Translate-firefox][]**
 + **chrome扩展: [Web-Translate-chrome][]**
  
@@ -13,15 +13,16 @@
 -----------------------------
 ![view2](http://oz6vony8d.bkt.clouddn.com/pdf-translate-view2.jpg)  
 
-## 2 使用说明
-### firefox和chrome扩展
+## 2 使用说明  
+
+###  firefox和chrome扩展
 1. 安装[Web-Translate-firefox][] 或 [Web-Translate-chrome][]
 2. 右键可进入配置页面,也可动态加载取词脚本
 3. 配置页面中添加url规则,用空格分开规则和注释(可为空),点击保存即可.格式为 规则+空格+注释,例子如下
 4. 比如"*://*.github.com/* 匹配所有github.com页面" (去掉双引号)
 5. 如果你删除了所有规则,再点击一次"保存"按钮,就会出现"恢复默认"按钮,让你恢复默认配置.
 6. PDF模式和WEB模式的配置,留空白并点击保存按钮将恢复默认.
-### js版本
+###  js版本
 1. 安装浏览器插件，[violentmonkey][2](暴力猴) 或者 [greasemonkey][](油猴子) 或者 [tampermonkey][](捣蛋猴)
 2. 推荐[火狐][6],因为火狐默认使用[PDF.js](http://mozilla.github.io/pdf.js/)加载本地PDF。
 3. 推荐插件[violentmonkey][3],向下兼容,图标好看,界面简洁.
