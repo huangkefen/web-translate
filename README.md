@@ -2,8 +2,9 @@
 + 双击划词翻译,浏览器脚本插件，支持PDF和普通网页. 
 + 使用国内优秀翻译软件[iCIBA][1]的即划即译功能。  
 + 我做了点微小的工作，把iCIBA的即划即译功能移植到浏览器上.
-+ **超级重大更新(2017/11/20):已经使用标准WebExtensionsAPI开发成扩展,版本1.0: [Web-Translate][]**
-+ **重大更新(2017/11/14):重写发音代码,现可完美发音,无需flash支持**.  
++ **firefox扩展: [Web-Translate-firefox][]**
++ **chrome扩展: [Web-Translate-chrome][]**
+ 
 
 
 **↓↓↓**  在firefox下浏览本地pdf 以及 在chrome下浏览普通网页  **↓↓↓**   
@@ -13,6 +14,14 @@
 ![view2](http://oz6vony8d.bkt.clouddn.com/pdf-translate-view2.jpg)  
 
 ## 2 使用说明
+### firefox和chrome扩展
+1. 安装[Web-Translate-firefox][] 或 [Web-Translate-chrome][]
+2. 右键可进入配置页面,也可动态加载取词脚本
+3. 配置页面中添加url规则,用空格分开规则和注释(可为空),点击保存即可.格式为 规则+空格+注释,例子如下
+4. 比如"*://*.github.com/* 匹配所有github.com页面" (去掉双引号)
+5. 如果你删除了所有规则,再点击一次"保存"按钮,就会出现"恢复默认"按钮,让你恢复默认配置.
+6. PDF模式和WEB模式的配置,留空白并点击保存按钮将恢复默认.
+### js版本
 1. 安装浏览器插件，[violentmonkey][2](暴力猴) 或者 [greasemonkey][](油猴子) 或者 [tampermonkey][](捣蛋猴)
 2. 推荐[火狐][6],因为火狐默认使用[PDF.js](http://mozilla.github.io/pdf.js/)加载本地PDF。
 3. 推荐插件[violentmonkey][3],向下兼容,图标好看,界面简洁.
@@ -33,6 +42,9 @@
 
 
 ## 4 url匹配模式简单说明(**重要**)
+### firefox 和 chrome 扩展
+参考 [模式匹配](http://open.chrome.360.cn/extension_dev/match_patterns.html) 和[Match_patterns](https://developer.mozilla.org/zh-CN/Add-ons/WebExtensions/Match_patterns)
+### js版
 在js代码的开头有一行注释是:
 ``` javascript
 // @match *://*/* 
@@ -54,7 +66,7 @@
 + 模式匹配可参考:[pattern][4] 或者 [match_patterns][]
 + 更详细的文档也可以参考 [tampermonkey-documentation][]
 
-## 5 版本
+## 5 版本(js版)
 v1.0  初始版本  
 1. 添加了jQuery支持  
 2. 即划即译的开关按钮隐藏在pdf页面右上角的菜单中  
@@ -86,11 +98,11 @@ v1.2.1
 答:主要是为了避免脚本冲突以及重复加载,避免对原网站造成干扰。
 
 
-## 7 Chrome兼容
+## 7 Chrome兼容(js版)
 + chrome下不支持**本地pdf**,因为无法匹配chrome-extension开头的地址.(chrome目前不允许匹配插件地址)
 + chrome下发音的问题已于2017/11/14通过修改发音代码解决,现可完美发音,无需flash支持,请更新脚本代码.
 
-## 8 尚未支持的少数网页(被浏览器安全机制所阻止)
+## 8 尚未支持的少数网页(js版)
 + [sarabander][]  该网页存在较严格的代码审查,iciba官方的一些代码无法通过校验,因此在该网页上无法正常加载.
 + [github.com][]  未经github签名的脚本会被拒绝注入,并且安全策略不允许跨域访问,因此也无法正常加载.
 + 后续有时间会写成firefox和chrome的扩展,这样就可以解决以上这些棘手的问题了.
@@ -108,4 +120,5 @@ v1.2.1
 [tampermonkey-documentation]:<http://tampermonkey.net/documentation.php>
 [sarabander]:<https://sarabander.github.io/sicp/html/index.xhtml>
 [github.com]:<https://github.com>
-[Web-Translate]:<https://addons.mozilla.org/zh-CN/firefox/addon/web-translate>
+[Web-Translate-firefox]:<https://addons.mozilla.org/zh-CN/firefox/addon/web-translate>
+[Web-Translate-chrome]:<https://chrome.google.com/webstore/detail/web-translate/hcgieffgpbjghiibedcileaobhopaodg?hl=zh-CN>
