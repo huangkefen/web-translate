@@ -13,17 +13,29 @@
 -----------------------------
 ![view2](http://oz6vony8d.bkt.clouddn.com/pdf-translate-view2.jpg)  
 
-## 2 使用说明  
 
-###  firefox和chrome扩展
+## 2 功能特性
+1. 双击或划译取词.
+2. 支持**本地PDF**的双击划译(仅firefox)。
+3. 支持**普通网页**的双击划译。
+4. 支持**自定义样式**,比如PDF页面背景色更改，默认苹果绿。
+5. 支持**发音**(firefox和chrome)。
+6. 翻译弹窗可固定。
+7. **取词开关**默认隐藏在右上角菜单(PDF模式下)。
+8. 跨平台，浏览器+插件。(针对日常使用Linux的朋友)
+9. 强大的url正则匹配功能。
+
+## 3 扩展使用说明  
+
 1. 安装[Web-Translate-firefox][] 或 [Web-Translate-chrome][]
 2. 右键可进入配置页面,也可动态加载取词脚本
 3. 配置页面中添加url规则,用空格分开规则和注释(可为空),点击保存即可.格式为 规则+空格+注释,例子如下
 4. 比如"*://*.github.com/* 匹配所有github.com页面" (去掉双引号)
 5. 如果你删除了所有规则,再点击一次"保存"按钮,就会出现"恢复默认"按钮,让你恢复默认配置.
 6. PDF模式和WEB模式的配置,留空白并点击保存按钮将恢复默认.  
-<br/>
-###  js版本
+
+## 4 js版本使用说明
+
 1. 安装浏览器插件，[violentmonkey][2](暴力猴) 或者 [greasemonkey][](油猴子) 或者 [tampermonkey][](捣蛋猴)
 2. 推荐[火狐][6],因为火狐默认使用[PDF.js](http://mozilla.github.io/pdf.js/)加载本地PDF。
 3. 推荐插件[violentmonkey][3],向下兼容,图标好看,界面简洁.
@@ -31,19 +43,10 @@
 5. 按需修改url匹配模式,即可正常使用.
 6. 欢迎反馈.
 
-## 3 功能特性
-1.   双击或划译取词.
-2.   支持**本地PDF**的双击划译(仅firefox)。
-3.   支持**普通网页**的双击划译。
-4.   支持**自定义样式**,比如PDF页面背景色更改，默认苹果绿。
-5.   支持**发音**(firefox和chrome)。
-6.   翻译弹窗可固定。
-7.   **取词开关**默认隐藏在右上角菜单(PDF模式下)。
-8.   跨平台，浏览器+插件。(针对日常使用Linux的朋友)
-9.   强大的url正则匹配功能。
 
 
-## 4 url匹配模式简单说明(**重要**)
+
+## 5 url匹配模式简单说明(**重要**)
 ### firefox 和 chrome 扩展
 参考 [模式匹配](http://open.chrome.360.cn/extension_dev/match_patterns.html) 和[Match_patterns](https://developer.mozilla.org/zh-CN/Add-ons/WebExtensions/Match_patterns)
 ### js版
@@ -51,8 +54,7 @@
 ``` javascript
 // @match *://*/* 
 ```
-
-这个匹配模式是匹配所有url网页.  
+以上这个匹配模式是匹配所有url网页.  
 也许你并不像这么做,比如你只想匹配本地打开的pdf,则可以改成:  
 ``` javascript
  // @match file:///*/*.pdf 
@@ -63,12 +65,13 @@
 // @include  https://wiki.greasespot.net/*  
 // @include  http://mozilla.github.io/pdf.js/web/viewer.html    
 // @include /^(http|https)://en\.people\.cn//   
+// @exclude  https://github.com/*
 ```
 
 + 模式匹配可参考:[pattern][4] 或者 [match_patterns][]
 + 更详细的文档也可以参考 [tampermonkey-documentation][]
 
-## 5 版本(js版)
+## 6 版本(js版)
 v1.0  初始版本  
 1. 添加了jQuery支持  
 2. 即划即译的开关按钮隐藏在pdf页面右上角的菜单中  
@@ -87,7 +90,7 @@ v1.2
 v1.2.1  
 修复了chrome下浏览在线pdf时候的字体重影问题.
 
-## 6 Why
+## 7 Why
 初衷:
 - Linux下阅读PDF英文文档不方便，  
 - goldendict非常不错,但却不支持foxitpdf的双击取词翻译。  
@@ -100,11 +103,11 @@ v1.2.1
 答:主要是为了避免脚本冲突以及重复加载,避免对原网站造成干扰。
 
 
-## 7 Chrome兼容(js版)
+## 8 Chrome兼容(js版)
 + chrome下不支持**本地pdf**,因为无法匹配chrome-extension开头的地址.(chrome目前不允许匹配插件地址)
 + chrome下发音的问题已于2017/11/14通过修改发音代码解决,现可完美发音,无需flash支持,请更新脚本代码.
 
-## 8 尚未支持的少数网页(js版)
+## 9 尚未支持的少数网页(js版)
 + [sarabander][]  该网页存在较严格的代码审查,iciba官方的一些代码无法通过校验,因此在该网页上无法正常加载.
 + [github.com][]  未经github签名的脚本会被拒绝注入,并且安全策略不允许跨域访问,因此也无法正常加载.
 + 后续有时间会写成firefox和chrome的扩展,这样就可以解决以上这些棘手的问题了.
