@@ -6,14 +6,6 @@
 + **chrome扩展: [Web-Translate-chrome][]**
  
 
-
-**↓↓↓**  在firefox下浏览本地pdf 以及 在chrome下浏览普通网页  **↓↓↓**   
-
-![view1](http://oz6vony8d.bkt.clouddn.com/pdf-translate-view1.jpg)      
------------------------------
-![view2](http://oz6vony8d.bkt.clouddn.com/pdf-translate-view2.jpg)  
-
-
 ## 2 功能特性
 1. 双击或划译取词.
 2. 支持**本地PDF**的双击划译(仅firefox)。
@@ -31,7 +23,7 @@
 2. 右键可进入配置页面,也可动态加载取词脚本
 3. 配置页面中添加url规则,用空格分开规则和注释(可为空),点击保存即可.格式为 规则+空格+注释,例子如下
 4. 比如"*://*.github.com/* 匹配所有github.com页面" (去掉双引号)
-5. 如果你删除了所有规则,再点击一次"保存"按钮,就会出现"恢复默认"按钮,让你恢复默认配置.
+5. 如果你删除了所有规则,再点击一次"保存"按钮,就会出现"恢复默认"按钮,可恢复默认配置.
 6. PDF模式和WEB模式的配置,留空白并点击保存按钮将恢复默认.  
 
 ## 4 js版本使用说明
@@ -48,7 +40,10 @@
 
 ## 5 url匹配模式简单说明(**重要**)
 ### firefox 和 chrome 扩展
-参考 [模式匹配](http://open.chrome.360.cn/extension_dev/match_patterns.html) 和[Match_patterns](https://developer.mozilla.org/zh-CN/Add-ons/WebExtensions/Match_patterns)
+参考 [match_patterns_360][] , [match_patterns_Mozilla][] ,  [match_patterns_Google][]
+
++ 在扩展的配置页面中添加规则 ,可按照格式 **规则 注释** 来添加(以任意空格分开,注释是可选的).使用换行符分开多条规则.
++ 如果你删除了所有规则,再点击一次"保存"按钮,就会出现"恢复默认"按钮,可恢复默认配置.
 ### js版
 在js代码的开头有一行注释是:
 ``` javascript
@@ -68,8 +63,7 @@
 // @exclude  https://github.com/*
 ```
 
-+ 模式匹配可参考:[pattern][4] 或者 [match_patterns][]
-+ 更详细的文档也可以参考 [tampermonkey-documentation][]
++ js版的模式匹配可参考:[include_and_exclude_rules][4] 或者  [tampermonkey-documentation][]
 
 ## 6 版本(js版)
 v1.0  初始版本  
@@ -112,6 +106,11 @@ v1.2.1
 + [github.com][]  未经github签名的脚本会被拒绝注入,并且安全策略不允许跨域访问,因此也无法正常加载.
 + 后续有时间会写成firefox和chrome的扩展,这样就可以解决以上这些棘手的问题了.
 
+**↓↓↓**  在firefox下浏览本地pdf 以及 在chrome下浏览普通网页  **↓↓↓**   
+
+![view1](http://oz6vony8d.bkt.clouddn.com/pdf-translate-view1.jpg)      
+-----------------------------
+![view2](http://oz6vony8d.bkt.clouddn.com/pdf-translate-view2.jpg)  
 
 [1]:<http://open.iciba.com/?c=huayi>
 [2]:<https://violentmonkey.github.io/get-it/>
@@ -121,9 +120,12 @@ v1.2.1
 [6]:<https://www.mozilla.org/zh-CN/firefox/new/>
 [greasemonkey]:<https://addons.mozilla.org/zh-CN/firefox/addon/greasemonkey/>
 [tampermonkey]:<https://addons.mozilla.org/zh-CN/firefox/addon/tampermonkey/>
-[match_patterns]:<http://code.google.com/chrome/extensions/match_patterns.html>
 [tampermonkey-documentation]:<http://tampermonkey.net/documentation.php>
 [sarabander]:<https://sarabander.github.io/sicp/html/index.xhtml>
 [github.com]:<https://github.com>
 [Web-Translate-firefox]:<https://addons.mozilla.org/zh-CN/firefox/addon/web-translate>
 [Web-Translate-chrome]:<https://chrome.google.com/webstore/detail/web-translate/hcgieffgpbjghiibedcileaobhopaodg?hl=zh-CN>
+
+[match_patterns_Google]:<http://code.google.com/chrome/extensions/match_patterns.html>
+[match_patterns_Mozilla]:<https://developer.mozilla.org/zh-CN/Add-ons/WebExtensions/Match_patterns>
+[match_patterns_360]:<http://open.chrome.360.cn/extension_dev/match_patterns.html>
