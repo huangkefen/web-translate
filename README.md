@@ -99,7 +99,7 @@
 [tampermonkey-documentation]:<http://tampermonkey.net/documentation.php>
 [sarabander]:<https://sarabander.github.io/sicp/html/index.xhtml>
 [github.com]:<https://github.com>
-[Web-Translate-firefox]:<https://addons.mozilla.org/zh-CN/firefox/addon/web-translate>
+[Web-Translate-firefox]:<https://addons.mozilla.org/addon/web-translate?src=external-github>
 [Web-Translate-chrome]:<https://chrome.google.com/webstore/detail/web-translate/hcgieffgpbjghiibedcileaobhopaodg?hl=zh-CN>
 
 [match_patterns_Google]:<http://code.google.com/chrome/extensions/match_patterns.html>
