@@ -1,8 +1,7 @@
 ## 1 关于
 + 双击划词翻译,浏览器脚本插件，支持PDF和普通网页. 
-+ 使用国内优秀翻译软件[iCIBA][1]的即划即译功能。
++ 使用国内优秀翻译软件[iCIBA][1]的即划即译功能,并使用了优秀的开源项目[PDF.js](http://mozilla.github.io/pdf.js/)
 + **最近更新(2018/06/12)**:添加右键打开本地PDF的功能，支持Chrome和Firefox，自动加载取词脚本
-
 + **firefox扩展: [Web-Translate-firefox][]**
 + **chrome扩展: [Web-Translate-chrome][]**
  
