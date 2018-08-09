@@ -4,7 +4,7 @@
 + **最近更新(2018/06/12)**:添加右键打开本地PDF的功能，支持Chrome和Firefox，自动加载取词脚本
 + **firefox扩展: [Web-Translate-firefox][]**
 + **chrome扩展: [Web-Translate-chrome][]**
-+ **[2018/08/09] Firefox 60 及以上版本,默认打开本地PDF时(比如file:///home/test.pdf),由于权限申请失败(被Firefox的最新安全策略阻止),导致无法成功加载取词脚本,请暂时使用"打开本地PDF"功能替代。**
++ **[2018/08/09] Firefox 60 及以上版本对安全漏洞 [CVE-2018-5158](https://nvd.nist.gov/vuln/detail/CVE-2018-5158)进行了修复,所以当前已无法在本地PDF中注入取词代码,请暂时使用右键的"打开本地PDF"功能替代。**
  
 
 ## 2 功能特性
